@@ -11,11 +11,12 @@ body{
     display: flex;
     height: 100vh;
     padding: 0.5rem;
+    padding-top: 0;
 }
 
 .side-bar{
     background-color: #000;
-    width: 340px;
+    width: 23%;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
@@ -152,11 +153,37 @@ a{
     margin-bottom: 0.8rem;
 }
 
+@media (max-width:1024px){
+    .side-bar{
+        width: 15%;
+    }
+    .text{
+        display: none;
+    }
+    .library-text{
+        display: none;
+    }
+    #right-arrow{
+        display: none;
+    }
+    #plus-sign{
+        margin-top: 1.5rem;
+    }
+    .library-box{
+        display: none;
+    }
+    .options{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
 /* Main Content nav bar */
 .main-content{
     padding: 0 1.5rem 0 1.5rem;
 }
 .sticky-nav{
+    margin-top: 0;
     padding: 1.1rem 0;
     position: sticky;
     background-color: #121212;
@@ -164,7 +191,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 50;
 }
 
 .sticky-nav-backward-forward img{
@@ -185,6 +212,11 @@ a{
 }
 .nav-item{
     margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.install-badge-text{
+    margin-left: 10px;
 }
 .install-badge{
     background-color: #000 ;
@@ -198,11 +230,18 @@ a{
         display:none;
     }
 }
-
+@media(max-width:400px){
+    .install-badge-text{
+        display: none;
+    }
+    .install-badge{
+        margin-right: 1.2rem;
+    }
+}
 /* Main content */
 .card{
     background-color: #232323;
-    width: 11rem;
+    width: auto;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-left: 1.5rem;
@@ -210,6 +249,7 @@ a{
 
 }
 .cards-container{
+    width: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -224,7 +264,24 @@ a{
     font-size: 0.85rem;
     opacity: 0.8;
 }
-
+@media (max-width:920px){
+    .cards-container{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #cards{
+        min-width: 40%;
+    }
+}
+@media (max-width:400px){
+    .main-block-2{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #cards{
+        min-width: 80%;
+    }
+}
 /* Main content for footrer */
 .footer
 {
@@ -266,12 +323,12 @@ a{
     margin-right: 1.5rem;
     opacity: 0.7;
 }
-.play-button{
+#play-button{
     height: 2rem;
     opacity: 1;
     transition: 0.3s linear;
 }
-.play-button:hover{
+#play-button:hover{
     height: 2.15rem;
 }
 .player-control-icon:hover {
@@ -387,6 +444,24 @@ span{
     padding: 0 0.8rem;
 }
 
-
+@media (max-width:1024px){
+    .control
+    {
+        display: none;
+    }
+    .a,.b,.c,.d,.playback-bar{
+        display: none;
+    }
+    #play-button{
+        display: inline;
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 25px;
+    }
+    .album{
+        max-width: 50%;
+    }
+}
 
 
