@@ -72,6 +72,9 @@ Spotify-Clone/
 │   ├── card3img.jpg
 │   ├── card4img.png
 │   └── card5img.png
+│   └── ..
+│   └── ..
+│   └── ..
 │
 ├── index.html
 │
