@@ -20,7 +20,7 @@
 
 Welcome to the Spotify Clone project! This repository contains a simplified clone of the Spotify web application, built using HTML and CSS. This project serves as a great way to understand and practice the basics of web development, including responsive design and modern web styling techniques.
 
-![Spotify Clone Screenshot](images/screenshot.png)
+<img width="1430" alt="Screenshot 2024-06-08 at 7 02 31 PM" src="https://github.com/CodeBeginner000001/Spotify-Clone/assets/92913917/3bf895eb-5111-414a-b326-80ec281a3a40">
 
 ## Features
 
