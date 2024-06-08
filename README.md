@@ -12,7 +12,6 @@
 - [Folder Structure](#folder-structure)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
@@ -88,10 +87,6 @@ Feel free to explore the code and modify it to better understand the structure a
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or find any issues, please create an issue or submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
